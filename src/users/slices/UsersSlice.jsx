@@ -4,10 +4,11 @@ const UsersSlice = createSlice({
   name: 'UsersSlice',
   initialState: [],
   reducers: {
-    addUser() {},
-    removeUser() {},
-    deleteUsers() {}
+    addUser(state, action) {},
+    removeUser(state, action) {},
+    deleteUsers(state, action) {}
   }
 });
 
-export { UsersSlice };
+console.log(UsersSlice.actions);
+export default UsersSlice.reducer;
