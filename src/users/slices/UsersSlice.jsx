@@ -13,6 +13,11 @@ const UsersSlice = createSlice({
     deleteUsers(state, action) {
       state.splice(0, state.length);
     }
+  },
+  extraReducers(builder) {
+    builder.addCase(UsersSlice.actions.deleteUsers, (state, action) => {
+      state.splice(0, state.length);
+    });
   }
 });
 
