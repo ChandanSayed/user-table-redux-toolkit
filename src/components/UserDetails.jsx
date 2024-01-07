@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import DeleteAllUsers from './DeleteAllUsers';
 import { fakeData } from '../api';
 import { useDispatch } from 'react-redux';
-import { addUser } from '../users/slices/UsersSlice';
+import { addUser } from '../store/slices/UsersSlice';
 import DisplayUsers from './DisplayUsers';
 
 const UserDetails = () => {

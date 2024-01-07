@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
-import { removeUser } from '../users/slices/UsersSlice';
+import { removeUser } from '../store/slices/UsersSlice';
 
 const DisplayUsers = () => {
   const dispatch = useDispatch();
